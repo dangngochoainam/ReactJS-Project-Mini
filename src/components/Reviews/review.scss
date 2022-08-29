@@ -1,0 +1,83 @@
+.reviews-container {
+    
+    display: grid;
+    place-items:center;
+    
+
+    font-size: 1.6rem;
+    background-color: aliceblue;
+    height: 100vh;
+
+    .reviews-underline {
+        height: 0.25rem;
+        width: 5rem;
+        background-color: #49a6e9;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reviews {
+        background-color: white;
+        padding: 2rem;
+        width: 60rem;
+        
+        .image {
+            width: 20rem;
+            height: 20rem;
+            object-fit: cover;
+            border-radius: 20rem;
+            position: relative;
+
+        }
+        .container-img{
+            position: relative;
+            height: 20rem;
+            width: 20rem;
+            border-radius: 100%;
+            margin: 0 auto;
+            background-color: transparent;
+        }
+        .container-img::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 2rem;
+            border-radius: 100%;
+            background-color: #49a6e9;
+
+        }
+
+        .info{
+           
+            .name{
+                text-transform: capitalize;
+            }
+            .job{
+                text-transform: uppercase;
+                color: #49a6e9;
+            }
+        }
+        .content{
+            p{
+                color: #617d98;
+            }
+        }
+        .btn-container{
+            button{
+                color: #8bcbf9;
+                font-size: 1.6rem;
+                outline: none;
+                border: 0;
+            }
+            button:hover{
+                color: #49a6e9;
+            }
+        }
+        .btn-random{
+            color: #49a6e9;
+            background-color: #8bcbf9;
+            font-size: 1.6rem;
+        }
+    }
+}

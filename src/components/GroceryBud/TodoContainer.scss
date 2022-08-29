@@ -1,0 +1,81 @@
+.todo__container {
+    background-color: white;
+    width: 50%;
+    min-height: 50vh;
+    margin: 0 auto;
+    padding: 2rem;
+
+    p.alert{
+        margin-bottom: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    h3 {
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    form {
+        
+        div.form-control{
+            padding: 0;
+            border: 0;
+            display: flex;
+        }
+
+
+        input {
+            flex: 1;
+            background-color: #f1f5f8;
+            border: 0;
+            padding: 0.5rem 1rem;
+            font-size: 1.6rem;
+            border-radius: 0.5rem 0 0 0.5rem;
+            
+        }
+        
+        button {
+            border-radius: 0 0.5rem 0.5rem 0;
+            padding: 0.5rem 1.5rem;
+            background-color: #a5d5f8;
+            border: 0;
+            font-size: 1.6rem;
+        }
+    }
+
+
+    .list__todo{
+        .grocery-item{
+            padding: 1rem;
+
+            p.title{
+                font-size: 1.5rem;
+            }
+
+            .btn-container{
+                button{
+
+                    border: 0;
+                    background-color: transparent;
+                }
+                .edit-btn{
+                    color: green;
+                    font-size: 1.3rem;
+                    margin-right: 1rem;
+                }
+                .delete-btn{
+                    font-size: 1.3rem;
+                     color: rgb(194, 36, 36);
+                }
+            }
+        }
+    }
+
+    .btn-clearAll{
+        border: 0;
+        background-color: transparent;
+        padding: 0.75rem 1rem;
+        color: red;
+        font-size: 1.5rem;
+    }
+}

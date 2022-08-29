@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+// Birthday Reminder
+
+$color-primary: #f28ab2;
+
+.birthday-main{
+    background-color: $color-primary;
+
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.birthday-section{
+    background-color: white;
+
+    padding: 3rem;
+    width: 50rem;
+
+    border-radius: 2rem;
+}
+
+.birthday-count_user{
+    font-size: 3rem;
+    text-align: left;
+}
+
+.birthday-avatar {
+    $size-img: 8rem;
+    width: $size-img;
+    height: $size-img;
+
+    object-fit: cover;
+    border-radius: 100%;
+
+}
+
+
+.birthday-btn{
+    width: 100%;
+    padding: 1rem;
+
+    border-radius: 1rem;
+    border: 0;
+
+    font-size: 2.3rem;
+    color: white;
+    background-color: $color-primary;
+
+    cursor: pointer;
+}
+
+.birthday-user{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.birthday-user_info{
+
+    font-size: 1.8rem;
+    text-align: left;
+}
+

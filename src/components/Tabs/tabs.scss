@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tabs-container {
+    font-size: 1.6rem;
+    background-color: #f1f5f8;
+    min-height: 100vh;
+    .title {
+        padding-top: 5rem;
+        margin-bottom: 5rem;
+        h1 {
+            margin-bottom: 0.8rem;
+        }
+        .underline {
+            margin: 0 auto;
+            height: 0.2rem;
+            width: 8rem;
+            background-color: rgba($color: #2caeba, $alpha: 1)
+        }
+    }
+    .jobs-center {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        column-gap: 3rem;
+
+        .btn-container {
+            font-size: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            button {
+                font-size: inherit;
+                border-left: 0.2rem solid rgba($color: #2caeba, $alpha: 0.3);
+                border: 0;
+                transition: border 0.5s ease;
+                &:hover {
+                    border-radius: 0;
+                    color: rgba($color: #2caeba, $alpha: 0.3);
+                }
+            }
+            .btn-active {
+                border-left: 0.2rem solid #2caeba;
+                border-radius: 0;
+                color: #2caeba;
+            }
+        }
+        .jobs-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h3 {
+                font-weight: 400;
+                font-size: 3rem;
+            }
+            h4 {
+                margin: 0.5rem 0;
+                padding: 0.3rem 0.75rem;
+                background-color: rgb(199, 209, 213);
+            }
+            .date {
+                color: rgb(112, 121, 124);
+            }
+            p {
+                text-align: justify;
+                color: #324d67;
+            }
+            .btn-more{
+        
+                display: block;
+                padding: 0.475rem 1rem;
+                background-color: #2caeba;
+                border: 0;
+                border-radius:0.5rem;
+                text-transform: uppercase;
+                color: #f1f5f8;
+                margin: 0 auto;
+                &:hover{
+                    color: #324d67;
+                    background-color: #2edbea;
+                }
+            }
+        }
+    }
+    
+}
